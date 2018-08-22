@@ -1,0 +1,54 @@
+{
+	"pattern": {
+		"name": "[Steam Avatars] Func #1",
+		"search": "83ECCC53568BF1576ACC68CCCCCCCC",
+		"wildcard": "0xCC",
+		"pattern": {
+			"name": "[Steam Avatars] Patch #1",
+			"search": 	"817C240C00030000",
+			"replace": 	"817C240C01000000",
+			"max_search": "120"
+		}
+	},
+	"pattern": {
+		"name": "[Steam Avatars] Func #2",
+		"search": "51535556578BF1E8CCCCCCCC",
+		"wildcard": "0xCC",
+		"pattern": {
+			"name": "[Steam Avatars] Patch #2-1",
+			"search": 	"817C241C00030000",
+			"replace": 	"817C241C01000000",
+			"max_search": "280",			
+			"pattern": {
+				"name": "[Steam Avatars] Patch #2-2",
+				"search": 	"817C241C00030000",
+				"replace": 	"817C241C01000000",
+				"wildcard": "0x0",
+				"max_search": "280"
+			}
+		}		
+	},
+	"pattern": {
+		"name": "[Steam Avatars] Func #3",
+		"search": "6ACC64A1CCCCCCCC",
+		"wildcard": "0xCC",
+		"pattern": {
+			"name": "[Steam Avatars] Patch #3-1",
+			"search": 	"8B44243C3D00030000",
+			"replace": 	"8B44243C3D01000000",
+			"max_search": "280"
+		}		
+	},
+	"pattern": {
+		"name": "[Steam Avatars] Func #4",
+		"search": "64A1CCCCCCCC6ACC68CCCCCCCC50648925CCCCCCCC83ECCC53555657",
+		"wildcard": "0xCC",
+		"pattern": {
+			"name": "[Steam Avatars] Patch #4-1",
+			"search": 	"817C241000030000",
+			"replace": 	"817C241001000000",
+			"max_search": "60"
+		}		
+	}
+	
+}
