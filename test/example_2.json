@@ -1,0 +1,14 @@
+{
+	"pattern": {
+		"name": "Steam Low Resolution Patch",
+		"search": 	"817C24CC00030000",
+		"wildcard": "0xCC",
+		"replace": 	"817C24CC01000000",
+		"replace_wildcard": "0xCC"		
+	},
+	"pattern": {
+		"name": "Steam Unicode Patch",
+		"search": 	"7E03880A",
+		"replace": 	"7603880A"	
+	}
+}
