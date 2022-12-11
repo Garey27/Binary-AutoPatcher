@@ -23,13 +23,13 @@ jobs:
         include:
           - os: windows-latest
             name: windows
-            binary_path: 'Release/bin_autopatcher.exe'
+            binary_path: 'builds/ninja-multi/Release/bin_autopatcher.exe'
           - os: ubuntu-latest
             name: linux
-            binary_path: 'Release/bin_autopatcher'
+            binary_path: 'builds/ninja-multi/Release/bin_autopatcher'
           - os: macos-latest
             name: osx
-            binary_path: 'Release/bin_autopatcher'
+            binary_path: 'builds/ninja-multi/Release/bin_autopatcher'
 
     steps:
       - uses: actions/checkout@v2
