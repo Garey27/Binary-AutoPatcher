@@ -22,11 +22,14 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         include:
           - os: windows-latest
-            triplet: x64-windows
+            name: windows
+            binary_path: 'builds/ninja_multi/Release/bin_autopatcher.exe'
           - os: ubuntu-latest
-            triplet: x64-linux
+            name: linux
+            binary_path: 'builds/ninja_multi/Release/bin_autopatcher'
           - os: macos-latest
-            triplet: x64-osx
+            name: osx
+            binary_path: 'builds/ninja_multi/Release/bin_autopatcher'
 
     steps:
       - uses: actions/checkout@v2
@@ -47,4 +50,10 @@ jobs:
       - name: Build (Release)
         run: |
           cmake --build --preset ninja-multi-release
-
+        
+      - name: Deploy artifacts
+        uses: actions/upload-artifact@v3
+        with:
+            name: binray-auto-patcher-${{ matrix.name }}
+            path: ${{ matrix.binary_path }}
+        
